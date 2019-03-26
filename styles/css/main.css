@@ -1,0 +1,55 @@
+body {
+  display: grid;
+  margin: 0;
+  padding: 0; }
+  body .container {
+    display: grid;
+    justify-self: center;
+    height: 600px;
+    width: 80%;
+    margin-top: 60px;
+    background-color: #444; }
+    body .container .interaction {
+      display: grid;
+      height: 60px;
+      width: 100%;
+      background-color: #666; }
+    body .container .interaction input {
+      justify-self: center;
+      height: 28px;
+      width: 300px;
+      border: none;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      text-align: center;
+      font-size: 20px;
+      outline: none; }
+    body .container .interaction input::placeholder {
+      text-transform: uppercase;
+      text-align: center; }
+    body .container .interaction button {
+      justify-self: center;
+      height: 28px;
+      width: 80px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px; }
+    body .container .list {
+      display: grid;
+      grid-template-columns: auto;
+      justify-content: space-evenly;
+      justify-self: center;
+      border-top: 1px solid white;
+      height: 540px;
+      width: 100%;
+      background-color: #444; }
+      body .container .list .task {
+        height: 40px;
+        width: 60px;
+        overflow: scroll;
+        background-color: rgba(30, 245, 155, 0.164);
+        color: #d4d4d4; }
+      body .container .list .task:hover {
+        background-color: #1ef59b; }
+
+/*# sourceMappingURL=main.css.map */

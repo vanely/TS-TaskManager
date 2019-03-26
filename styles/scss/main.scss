@@ -1,0 +1,73 @@
+@import './variables';
+@import './mixins';
+
+body {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  
+  .container {
+    display: grid;
+    justify-self: center;
+    height: 600px;
+    width: 80%;
+    margin-top: 60px;
+    background-color: $background;
+
+    .interaction {
+      display: grid;
+      height: 60px;
+      width: 100%;
+      background-color: $background2;
+    }
+
+    .interaction input {
+      justify-self: center;
+      height: 28px;
+      width: 300px;
+      border: none;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      text-align: center;
+      font-size: 20px;
+      outline: none;
+    }
+
+    .interaction input::placeholder{
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    .interaction button {
+      justify-self: center;
+      height: 28px;
+      width: 80px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    
+    .list {
+      display: grid;
+      grid-template-columns: auto;
+      justify-content: space-evenly;
+      justify-self: center;
+      border-top: 1px solid white;
+      height: 540px;
+      width: 100%;
+      background-color: $background;
+
+      .task {
+        height: 40px;
+        width: 60px;
+        overflow: scroll;
+        background-color: $inactive;
+        color: $text;
+      }
+      
+      .task:hover {
+        background-color: $active;
+      }
+    }
+  }
+}

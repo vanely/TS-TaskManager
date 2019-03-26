@@ -1,0 +1,19 @@
+{
+  "name": "ToolBarTwo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "watch-scss": "sass --watch styles/scss:styles/css",
+    "build-ts": "tsc",
+    "watch-ts": "tsc -w",
+    "start": "node dist/app.js"
+  },
+  "keywords": [],
+  "author": "Vanely Santos",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^11.11.7",
+    "ts-lint": "^4.5.1"
+  }
+}
