@@ -1,6 +1,6 @@
 export default class ToolBarItem {
-  private userTodo: Element | null;
-  private submit: Element | null;
+  public userTodo: HTMLElement | null;
+  public submit: HTMLElement | null;
 
   constructor() {
     this.userTodo = document.querySelector('#todoEntry');
@@ -9,12 +9,12 @@ export default class ToolBarItem {
     this.submit.addEventListener('click', this.add);
   }
 
-  add() {
-    console.log('Hi there I work');
+  add(e: Event) {
+    console.log(`Hi there I work ${this.userTodo}`);
   }
 
   remove() {
-
+    console.log();
   }
 
   edit() {

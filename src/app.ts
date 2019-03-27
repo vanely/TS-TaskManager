@@ -1,5 +1,9 @@
+///<reference path="./ToolBarItem.ts"/>
 import ToolBarItem from './ToolBarItem';
 
-let item: ToolBarItem = new ToolBarItem();
+let item = new ToolBarItem();
 
-item
+console.log(item);
+
+//fix for 'exports' is not defined
+// export = null
